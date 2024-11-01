@@ -2,6 +2,18 @@
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
 
+type PageDetails = {
+  createAt: Date,
+  updateAt: Date
+};
+
+type PageInfo = {
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: 'open' | 'close',
+}
+
 const page1 = {
   title: 'The awesome page',
   likes: 100,
